@@ -1,12 +1,11 @@
-﻿char escolhaUsuario;
+﻿string escolhaUsuario;
 
 Console.WriteLine("--- Fluxograma da Engenharia ---");
 
 do{
     Console.Write("O objeto está se movendo? (S)im ou (N)ão: ");
-    string entrada = Console.ReadLine()!.Trim().ToUpper();
-    if (entrada == "S" || entrada == "N"){
-        escolhaUsuario = Convert.ToChar(entrada);
+    escolhaUsuario = Console.ReadLine()!.Trim().ToUpper();
+    if (escolhaUsuario == "S" || escolhaUsuario == "N"){
         break;
     }
     else{
@@ -14,12 +13,11 @@ do{
     }
 } while (true);
 
-if (escolhaUsuario == 'S'){
+if (escolhaUsuario == "S"){
     do{
         Console.Write("O objeto deveria se mover? (S)im ou (N)ão: ");
-        string entrada = Console.ReadLine()!.Trim().ToUpper();
-        if (entrada == "S" || entrada == "N"){
-            escolhaUsuario = Convert.ToChar(entrada);
+        escolhaUsuario = Console.ReadLine()!.Trim().ToUpper();
+        if (escolhaUsuario == "S" || escolhaUsuario == "N"){
             break;
         }
         else{
@@ -27,7 +25,7 @@ if (escolhaUsuario == 'S'){
         }
     } while (true);
 
-    if (escolhaUsuario == 'S'){
+    if (escolhaUsuario == "S"){
         Console.WriteLine("Ótimo!");
     }
     else{
@@ -38,9 +36,8 @@ else{
     do
     {
         Console.Write("O objeto deveria se mover? (S)im ou (N)ão: ");
-        string entrada = Console.ReadLine()!.Trim().ToUpper();
-        if (entrada == "S" || entrada == "N"){
-            escolhaUsuario = Convert.ToChar(entrada);
+        escolhaUsuario = Console.ReadLine()!.Trim().ToUpper();
+        if (escolhaUsuario == "S" || escolhaUsuario == "N"){
             break;
         }
         else{
@@ -48,7 +45,7 @@ else{
         }
     } while (true);
 
-    if (escolhaUsuario == 'N'){
+    if (escolhaUsuario == "N"){
         Console.WriteLine("Ótimo!");
     }
     else{
